@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ethereal Ascent by Ronak Bahador (2023)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ethereal Ascent by Ronak Bahador (2023) - baab studio</title>
 
     <!-- Essential Meta Tags for SEO and Sharing -->
     <meta name="description" content="A profile of 'Ethereal Ascent', a contemplative abstract painting by Ronak Bahador, exploring themes of existence, isolation, and ascension.">
     <meta name="keywords" content="Ronak Bahador, Ethereal Ascent, Abstract Art, Modern Art, Identity, Isolation, Art Profile">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Open Graph Meta Tags for Social Media Sharing -->
     <meta property="og:title" content="Ethereal Ascent by Ronak Bahador (2023)">
@@ -22,61 +23,41 @@
     <meta name="twitter:description" content="Discover the themes of isolation and identity in Ronak Bahador's 'Ethereal Ascent'.">
     <meta name="twitter:image" content="ethereal-ascent.jpg">
 
-    <!-- Include Google Font 'Lato' for a minimalist and modern aesthetic -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
 
-    <style>
-        body {
-            font-family: 'Lato', sans-serif;
-            margin: 40px;
-            background-color: #F7F7F2;
-            color: #4A4A4A;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #2E4A46;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto 30px;
-        }
-        ul.info-list {
-            list-style-type: none;
-            padding: 0;
-            margin-bottom: 30px;
-        }
-        ul.info-list li {
-            margin-bottom: 8px;
-        }
-        h3 {
-            margin-top: 40px;
-            color: #2E4A46;
-        }
-        p {
-            text-align: justify;
-        }
-        strong {
-            font-weight: bold;
-            color: #4A4A4A;
-        }
-        ul li strong {
-            color: #4A4A4A;
-        }
-    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>"Ethereal Ascent" by Ronak Bahador (2023)</h1>
-        <img src="ethereal-ascent.jpg" alt="Ethereal Ascent by Ronak Bahador">
-        <ul class="info-list">
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">baab studio</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu">
+                <button class="nav-close" aria-label="Close navigation">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Artwork Content -->
+    <div class="artwork-container">
+        <h1 class="artwork-title">"Ethereal Ascent" by Ronak Bahador (2023)</h1>
+        <img src="ethereal-ascent.jpg" alt="Ethereal Ascent by Ronak Bahador" class="artwork-image">
+
+        <ul class="artwork-info info-list">
             <li><strong>Artist</strong>: Ronak Bahador</li>
             <li><strong>Title</strong>: Ethereal Ascent</li>
             <li><strong>Year</strong>: 2023</li>
@@ -84,17 +65,82 @@
             <li><strong>Style</strong>: Abstract Figurative</li>
             <li><strong>Themes</strong>: Identity, Human Condition, Spirituality, Isolation</li>
         </ul>
-        <h3>Description:</h3>
-        <p>"Ethereal Ascent" is a powerful abstract piece that captures the complexity of human existence. With its abstracted human figure seemingly in a state of transformation, this piece evokes the viewer’s contemplation of life, identity, and spirituality. The muted golds and browns suggest a raw, grounded humanity, while the surrounding gray strokes hint at a universe of unknown forces and emotions.</p>
-        <p>The flowing, elongated central figure, both human and abstract, rises from a nebulous void, calling into question the nature of self and existence. Through its minimalist and raw form, Bahador has captured the balance between the earthly and the divine, isolation and connection.</p>
-        <h3>Notable Elements:</h3>
-        <ul>
-            <li><strong>Minimalist Figure</strong>: The figure, both defined and abstract, draws the viewer into a deep contemplation of self and soul.</li>
-            <li><strong>Emotional Contrast</strong>: The contrast between the figure’s warm, organic tones and the cold, chaotic background creates a dynamic tension.</li>
-            <li><strong>Textural Detail</strong>: The textured strokes and uneven application of color give the work a visceral, tactile quality that enhances its emotional impact.</li>
-        </ul>
-        <h3>Interpretation:</h3>
-        <p>"Ethereal Ascent" delves into themes of transformation, spiritual growth, and the inner human struggle. It reflects the uncertain nature of identity, where form and meaning blur into the intangible forces of existence. This painting is a meditation on ascension—both in the metaphysical and existential sense—where the viewer is left to grapple with their own interpretation of life’s ephemeral nature.</p>
+
+        <div class="artwork-section">
+            <h3>Description:</h3>
+            <p>"Ethereal Ascent" is a powerful abstract piece that captures the complexity of human existence. With its abstracted human figure seemingly in a state of transformation, this piece evokes the viewer's contemplation of life, identity, and spirituality. The muted golds and browns suggest a raw, grounded humanity, while the surrounding gray strokes hint at a universe of unknown forces and emotions.</p>
+            <p>The flowing, elongated central figure, both human and abstract, rises from a nebulous void, calling into question the nature of self and existence. Through its minimalist and raw form, Bahador has captured the balance between the earthly and the divine, isolation and connection.</p>
+        </div>
+
+        <div class="artwork-section">
+            <h3>Notable Elements:</h3>
+            <ul>
+                <li><strong>Minimalist Figure</strong>: The figure, both defined and abstract, draws the viewer into a deep contemplation of self and soul.</li>
+                <li><strong>Emotional Contrast</strong>: The contrast between the figure's warm, organic tones and the cold, chaotic background creates a dynamic tension.</li>
+                <li><strong>Textural Detail</strong>: The textured strokes and uneven application of color give the work a visceral, tactile quality that enhances its emotional impact.</li>
+            </ul>
+        </div>
+
+        <div class="artwork-section">
+            <h3>Interpretation:</h3>
+            <p>"Ethereal Ascent" delves into themes of transformation, spiritual growth, and the inner human struggle. It reflects the uncertain nature of identity, where form and meaning blur into the intangible forces of existence. This painting is a meditation on ascension—both in the metaphysical and existential sense—where the viewer is left to grapple with their own interpretation of life's ephemeral nature.</p>
+        </div>
+
+        <div class="text-center">
+            <a href="index.html#gallery" class="back-link">Back to Gallery</a>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">baab studio</div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <p class="footer-copyright">&copy; 2025 baab studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Navigation Toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navClose = document.querySelector('.nav-close');
+        const navMenu = document.querySelector('.nav-menu');
+        const navLinks = document.querySelectorAll('.nav-menu a');
+
+        // Toggle navigation on mobile
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.add('active');
+        });
+
+        navClose.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        });
+
+        // Close navigation when clicking on a link
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = 'rgba(247, 247, 242, 0.95)';
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.backgroundColor = 'var(--background-color)';
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
