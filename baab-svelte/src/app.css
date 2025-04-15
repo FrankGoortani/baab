@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/* Import Lato font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Base CSS Variables */
+:root {
+    --background-color: #F7F7F2;
+    --text-color: #4A4A4A;
+    --heading-color: #2E4A46;
+    --accent-color: #5a4d41;
+    --light-accent: #eae7dc;
+    --gold-accent: #D9B166;
+    --transition-time: 0.3s;
+}
+
+@layer base {
+    body {
+        @apply bg-[var(--background-color)] text-[var(--text-color)] font-sans text-base leading-relaxed overflow-x-hidden;
+        font-family: 'Lato', sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply text-[var(--heading-color)] font-bold;
+    }
+
+    a {
+        @apply text-[var(--accent-color)] no-underline transition-all duration-300 relative;
+    }
+
+    a:hover {
+        @apply text-[var(--gold-accent)];
+    }
+}
+
+/* Utility classes that extend Tailwind */
+@layer utilities {
+    .container {
+        @apply w-full max-w-7xl mx-auto px-4;
+    }
+
+    .section {
+        @apply py-12 md:py-16;
+    }
+}
