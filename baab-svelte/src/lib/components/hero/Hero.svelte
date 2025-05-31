@@ -1,7 +1,8 @@
-<script>
-  export let heroImage = 'eclipse-of-the-soul.jpg';
-  export let title = 'baab studio';
-  export let subtitle = 'A journey through abstraction and form, exploring identity, spirituality, and cultural heritage through mindful expression.';
+<script lang="ts">
+  export let heroImage: string = 'eclipse-of-the-soul.jpg';
+  export let title: string = 'baab studio';
+  export let subtitle: string =
+    'A journey through abstraction and form, exploring identity, spirituality, and cultural heritage through mindful expression.';
 </script>
 
 <section id="hero" class="hero h-screen flex items-center justify-center text-center relative overflow-hidden bg-[var(--light-accent)] mt-0">

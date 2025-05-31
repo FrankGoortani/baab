@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
 
   // Get image path for the artist stamp
-  const stampImagePath = '/ronak_stamp.png';
+  const stampImagePath: string = '/ronak_stamp.png';
 
   // Add any animations or interactions when page loads
   onMount(() => {

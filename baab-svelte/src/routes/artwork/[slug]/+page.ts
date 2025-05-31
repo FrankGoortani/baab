@@ -1,10 +1,9 @@
 import { error } from '@sveltejs/kit';
 import { getArtworkBySlug } from '$lib/stores/artworks';
-import type { LoadEvent } from '@sveltejs/kit';
+import type { PageLoad } from './$types';
 
-export const load = ({ params }: { params: { slug: string } }) => {
-  const { slug } = params;
-  const artwork = getArtworkBySlug(slug);
+export const load: PageLoad = ({ params }) => {
+  const artwork = getArtworkBySlug(params.slug);
 
   if (!artwork) {
     throw error(404, {
@@ -12,7 +11,5 @@ export const load = ({ params }: { params: { slug: string } }) => {
     });
   }
 
-  return {
-    artwork
-  };
+  return { artwork };
 };

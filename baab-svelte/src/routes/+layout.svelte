@@ -1,5 +1,4 @@
-<script>
-  import { page } from '$app/stores';
+<script lang="ts">
   import { onMount } from 'svelte';
   import '../app.css';
   import Header from '$lib/components/common/Header.svelte';
