@@ -1,16 +1,16 @@
-@import 'tailwindcss';
-@plugin '@tailwindcss/typography';
-
 /* Import Lato font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
 
 /* Base CSS Variables */
 :root {
     --background-color: #F7F7F2;
     --text-color: #4A4A4A;
     --heading-color: #2E4A46;
-    --accent-color: #5a4d41;
-    --light-accent: #eae7dc;
+    --accent-color: #2E4A46;
+    --light-accent: #FFFFFF;
     --gold-accent: #D9B166;
     --transition-time: 0.3s;
 }

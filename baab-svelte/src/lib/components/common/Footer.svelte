@@ -3,7 +3,7 @@
   const currentYear = new Date().getFullYear();
 </script>
 
-<footer class="bg-accent text-[var(--light-accent)] py-12 pb-8 relative">
+<footer class="bg-[#2E4A46] text-white py-12 pb-8 relative">
   <div class="absolute top-0 left-0 right-0 h-[5px] bg-gradient-to-r from-[var(--gold-accent)] via-[var(--heading-color)] to-[var(--gold-accent)] opacity-60"></div>
 
   <div class="container flex flex-col items-center">
@@ -17,28 +17,28 @@
         <li class="mx-4">
           <a
             href="/"
-            class="text-[var(--light-accent)] no-underline transition-all duration-300 text-lg relative py-1 hover:text-white">
+            class="text-white no-underline transition-all duration-300 text-lg relative py-1 hover:text-[var(--gold-accent)]">
             Home
           </a>
         </li>
         <li class="mx-4">
           <a
             href="/#gallery"
-            class="text-[var(--light-accent)] no-underline transition-all duration-300 text-lg relative py-1 hover:text-white">
+            class="text-white no-underline transition-all duration-300 text-lg relative py-1 hover:text-[var(--gold-accent)]">
             Gallery
           </a>
         </li>
         <li class="mx-4">
           <a
             href="/about"
-            class="text-[var(--light-accent)] no-underline transition-all duration-300 text-lg relative py-1 hover:text-white">
+            class="text-white no-underline transition-all duration-300 text-lg relative py-1 hover:text-[var(--gold-accent)]">
             About
           </a>
         </li>
         <li class="mx-4">
           <a
             href="mailto:contact@baab.studio"
-            class="text-[var(--light-accent)] no-underline transition-all duration-300 text-lg relative py-1 hover:text-white">
+            class="text-white no-underline transition-all duration-300 text-lg relative py-1 hover:text-[var(--gold-accent)]">
             Contact
           </a>
         </li>
@@ -60,7 +60,7 @@
     left: 0;
     width: 0;
     height: 1px;
-    background-color: white;
+    background-color: var(--gold-accent);
     transition: width var(--transition-time) ease;
   }
 
