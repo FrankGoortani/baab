@@ -1,5 +1,4 @@
-<script>
-  import { page } from '$app/stores';
+<script lang="ts">
   import { onMount } from 'svelte';
 
   export let navActive = false;
@@ -43,7 +42,8 @@
     <button
       class="nav-toggle block lg:hidden bg-transparent border-0 text-2xl text-accent cursor-pointer"
       on:click={toggleNav}
-      aria-label="Toggle navigation">
+      aria-label="Toggle navigation"
+      aria-expanded={navActive}>
       <i class="fas fa-bars"></i>
     </button>
 
