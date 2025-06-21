@@ -1,0 +1,11 @@
+# baab studio
+
+> Portfolio of abstract and figurative artwork by Ronak Bahador, exploring identity, spirituality and cultural heritage.
+
+- [Home](https://baab.studio/index.html) - Explore the full collection of works.
+- [About](https://baab.studio/about.html) - Learn about the artist and his vision.
+- [Eclipse of the Soul](https://baab.studio/eclipse-of-the-soul.html) - Abstract figurative painting on spirituality, identity and reflection.
+- [Ethereal Ascent](https://baab.studio/ethereal-ascent.html) - Contemplative abstract work on existence and ascension.
+- [Pomegranate Reverie](https://baab.studio/pomegranate-reverie.html) - Vibrant piece blending pomegranates with geometric patterns.
+- [Shadows of Existence](https://baab.studio/shadows-of-existence.html) - Expressive painting addressing isolation and spirituality.
+- [Veil of the Self](https://baab.studio/veil-of-the-self.html) - Minimalist exploration of identity and perception.
