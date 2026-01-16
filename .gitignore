@@ -1,1 +1,35 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+build/
+dist/
+.svelte-kit/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AI tools
 .aider*
+
+# Logs
+*.log
+
+# Archives (fonts should be extracted or linked, not committed as archives)
+*.zip
+*.tar.gz
+
+# Lock files at root (subprojects have their own)
+/package-lock.json

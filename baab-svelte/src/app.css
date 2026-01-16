@@ -6,41 +6,46 @@
 
 /* Base CSS Variables */
 :root {
-    --background-color: #F7F7F2;
-    --text-color: #4A4A4A;
-    --heading-color: #2E4A46;
-    --accent-color: #2E4A46;
-    --light-accent: #FFFFFF;
-    --gold-accent: #D9B166;
-    --transition-time: 0.3s;
+	--background-color: #f7f7f2;
+	--text-color: #4a4a4a;
+	--heading-color: #2e4a46;
+	--accent-color: #2e4a46;
+	--light-accent: #ffffff;
+	--gold-accent: #d9b166;
+	--transition-time: 0.3s;
 }
 
 @layer base {
-    body {
-        @apply bg-[var(--background-color)] text-[var(--text-color)] font-sans text-base leading-relaxed overflow-x-hidden;
-        font-family: 'Lato', sans-serif;
-    }
+	body {
+		@apply overflow-x-hidden bg-[var(--background-color)] font-sans text-base leading-relaxed text-[var(--text-color)];
+		font-family: 'Lato', sans-serif;
+	}
 
-    h1, h2, h3, h4, h5, h6 {
-        @apply text-[var(--heading-color)] font-bold;
-    }
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-bold text-[var(--heading-color)];
+	}
 
-    a {
-        @apply text-[var(--accent-color)] no-underline transition-all duration-300 relative;
-    }
+	a {
+		@apply relative text-[var(--accent-color)] no-underline transition-all duration-300;
+	}
 
-    a:hover {
-        @apply text-[var(--gold-accent)];
-    }
+	a:hover {
+		@apply text-[var(--gold-accent)];
+	}
 }
 
 /* Utility classes that extend Tailwind */
 @layer utilities {
-    .container {
-        @apply w-full max-w-7xl mx-auto px-4;
-    }
+	.container {
+		@apply mx-auto w-full max-w-7xl px-4;
+	}
 
-    .section {
-        @apply py-12 md:py-16;
-    }
+	.section {
+		@apply py-12 md:py-16;
+	}
 }
