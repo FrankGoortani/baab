@@ -1,24 +1,33 @@
 /* Import Lato font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&display=swap');
 
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
 /* Base CSS Variables */
 :root {
-	--background-color: #f7f7f2;
-	--text-color: #4a4a4a;
-	--heading-color: #2e4a46;
-	--accent-color: #2e4a46;
+	--background-color: #f9f8f4;
+	--text-color: #5a5a5a;
+	--heading-color: #3d5a56;
+	--accent-color: #3d5a56;
 	--light-accent: #ffffff;
-	--gold-accent: #d9b166;
-	--transition-time: 0.3s;
+	--gold-accent: #b8a582;
+	--gold-accent-subtle: #d4c9b5;
+	--card-bg: rgba(249, 248, 244, 0.5);
+	--transition-fast: 0.4s;
+	--transition-medium: 0.6s;
+	--transition-slow: 0.8s;
+	--ease-calm: cubic-bezier(0.4, 0, 0.2, 1);
+	--shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.06);
+	--shadow-hover: 0 8px 40px rgba(0, 0, 0, 0.1);
 }
 
 @layer base {
 	body {
-		@apply overflow-x-hidden bg-[var(--background-color)] font-sans text-base leading-relaxed text-[var(--text-color)];
+		@apply overflow-x-hidden bg-[var(--background-color)] font-sans text-base text-[var(--text-color)];
 		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		line-height: 1.8;
 	}
 
 	h1,
@@ -27,11 +36,13 @@
 	h4,
 	h5,
 	h6 {
-		@apply font-bold text-[var(--heading-color)];
+		@apply text-[var(--heading-color)];
+		font-weight: 600;
 	}
 
 	a {
-		@apply relative text-[var(--accent-color)] no-underline transition-all duration-300;
+		@apply text-[var(--accent-color)] no-underline;
+		transition: color var(--transition-medium) var(--ease-calm);
 	}
 
 	a:hover {
@@ -47,5 +58,35 @@
 
 	.section {
 		@apply py-12 md:py-16;
+	}
+
+	.shadow-soft {
+		box-shadow: var(--shadow-soft);
+	}
+
+	.shadow-hover {
+		box-shadow: var(--shadow-hover);
+	}
+
+	.transition-calm {
+		transition: all var(--transition-medium) var(--ease-calm);
+	}
+
+	.transition-calm-color {
+		transition: color var(--transition-medium) var(--ease-calm);
+	}
+
+	.transition-calm-bg {
+		transition: background-color var(--transition-medium) var(--ease-calm);
+	}
+
+	.transition-calm-bg-color {
+		transition:
+			background-color var(--transition-medium) var(--ease-calm),
+			color var(--transition-medium) var(--ease-calm);
+	}
+
+	.section-heading {
+		@apply mb-4 inline-block border-b border-[var(--gold-accent-subtle)] pb-2 text-xl font-semibold text-[var(--heading-color)];
 	}
 }

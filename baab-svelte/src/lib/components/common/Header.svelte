@@ -5,17 +5,14 @@
 	export let navActive = false;
 	export let scrolled = false;
 
-	// Toggle mobile navigation
 	function toggleNav() {
 		navActive = !navActive;
 	}
 
-	// Close navigation when clicking on a link
 	function closeNav() {
 		navActive = false;
 	}
 
-	// Handle header scroll effect
 	onMount(() => {
 		const handleScroll = () => {
 			scrolled = window.scrollY > 50;
@@ -30,14 +27,12 @@
 </script>
 
 <header
-	class="border-accent/10 fixed top-0 left-0 z-50 w-full border-b py-5 transition-all duration-300"
-	style={scrolled
-		? 'background-color: rgba(247, 247, 242, 0.95); box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);'
-		: ''}
+	class="site-header fixed top-0 left-0 z-50 w-full border-b border-[var(--gold-accent-subtle)]/30 py-5"
+	class:scrolled
 >
 	<div class="container flex items-center justify-between">
-		<div class="logo text-accent relative py-1 text-2xl font-bold tracking-wider">
-			<a href="/" class="text-accent relative flex items-center whitespace-nowrap">
+		<div class="logo text-accent py-1 text-2xl font-semibold tracking-wider">
+			<a href="/" class="text-accent flex items-center whitespace-nowrap">
 				<img src="/baab.png" alt="baab studio logo" class="mr-3 h-[45px] w-auto" />
 				<span class="logo-text">baab studio</span>
 			</a>
@@ -53,9 +48,9 @@
 		</button>
 
 		<nav
-			class="nav-menu bg-background fixed top-0 left-0 flex h-screen w-full transform flex-col items-center justify-center lg:static lg:h-auto lg:flex-row {navActive
-				? 'translate-y-0'
-				: '-translate-y-full'} z-[900] transition-transform duration-300 lg:translate-y-0"
+			class="nav-menu bg-background fixed top-0 left-0 z-[900] flex h-screen w-full transform flex-col items-center justify-center lg:static lg:h-auto lg:translate-y-0 lg:flex-row"
+			class:translate-y-0={navActive}
+			class:-translate-y-full={!navActive}
 		>
 			<button
 				class="nav-close text-accent absolute top-6 right-6 cursor-pointer border-0 bg-transparent text-2xl lg:hidden"
@@ -69,7 +64,7 @@
 				<li class="my-6 lg:mx-4 lg:my-0">
 					<a
 						href="/"
-						class="text-accent relative py-1 text-xl hover:text-[var(--gold-accent)] lg:text-base"
+						class="text-accent py-1 text-xl lg:text-base"
 						on:click={closeNav}
 						class:active={$page.url.pathname === '/'}
 					>
@@ -77,18 +72,14 @@
 					</a>
 				</li>
 				<li class="my-6 lg:mx-4 lg:my-0">
-					<a
-						href="/#gallery"
-						class="text-accent relative py-1 text-xl hover:text-[var(--gold-accent)] lg:text-base"
-						on:click={closeNav}
-					>
+					<a href="/#gallery" class="text-accent py-1 text-xl lg:text-base" on:click={closeNav}>
 						Gallery
 					</a>
 				</li>
 				<li class="my-6 lg:mx-4 lg:my-0">
 					<a
 						href="/about"
-						class="text-accent relative py-1 text-xl hover:text-[var(--gold-accent)] lg:text-base"
+						class="text-accent py-1 text-xl lg:text-base"
 						on:click={closeNav}
 						class:active={$page.url.pathname === '/about'}
 					>
@@ -101,34 +92,26 @@
 </header>
 
 <style>
-	/* Style for active navigation links */
-	.active::after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 2px;
-		background-color: var(--gold-accent);
+	.site-header {
+		transition:
+			background-color var(--transition-medium) var(--ease-calm),
+			box-shadow var(--transition-medium) var(--ease-calm);
 	}
 
-	/* Custom hover effects */
-	a::after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 0;
-		height: 2px;
-		background-color: var(--gold-accent);
-		transition: width var(--transition-time) ease;
+	.site-header.scrolled {
+		background-color: rgba(249, 248, 244, 0.9);
+		backdrop-filter: blur(8px);
+		box-shadow: var(--shadow-soft);
 	}
 
-	a:hover::after {
-		width: 100%;
+	.nav-menu {
+		transition: transform var(--transition-slow) var(--ease-calm);
 	}
 
-	/* Responsive adjustments */
+	.active {
+		border-bottom: 2px solid var(--gold-accent);
+	}
+
 	@media (min-width: 1024px) {
 		.nav-menu {
 			transform: translateY(0);

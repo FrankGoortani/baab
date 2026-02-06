@@ -1,13 +1,5 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
-	// Get image path for the artist stamp
-	const stampImagePath: string = '/ronak_stamp.png';
-
-	// Add any animations or interactions when page loads
-	onMount(() => {
-		// Animation or other onMount functionality can be added here
-	});
+	const stampImagePath = '/ronak_stamp.png';
 </script>
 
 <svelte:head>
@@ -20,9 +12,7 @@
 
 <div class="about-page pt-32 pb-16">
 	<div class="container mx-auto max-w-[800px] px-4">
-		<h1 class="mb-8 text-3xl font-bold text-[var(--heading-color)] md:text-4xl">
-			About the Artist
-		</h1>
+		<h1 class="mb-8 text-3xl text-[var(--heading-color)] md:text-4xl">About the Artist</h1>
 
 		<div class="about-content">
 			<div class="artist-stamp mb-10 flex justify-center">
@@ -30,8 +20,8 @@
 			</div>
 
 			<section class="mb-10">
-				<h2 class="mb-4 text-2xl font-bold text-[var(--heading-color)]">Artistic Vision</h2>
-				<p class="mb-6 text-lg leading-relaxed">
+				<h2 class="mb-4 text-2xl text-[var(--heading-color)]">Artistic Vision</h2>
+				<p class="mb-6 text-lg">
 					Ronak Bahador is an abstract figurative artist whose work explores the delicate balance
 					between form and abstraction, the physical and the spiritual, the personal and the
 					universal. Through a distinctive visual language that combines minimalist techniques with
@@ -41,14 +31,12 @@
 			</section>
 
 			<section class="mb-10">
-				<h2 class="mb-4 text-2xl font-bold text-[var(--heading-color)]">Themes & Inspiration</h2>
-				<p class="mb-6 text-lg leading-relaxed">
-					Three core themes inform Ronak's artistic practice:
-				</p>
+				<h2 class="mb-4 text-2xl text-[var(--heading-color)]">Themes & Inspiration</h2>
+				<p class="mb-6 text-lg">Three core themes inform Ronak's artistic practice:</p>
 
-				<div class="theme-section mb-6 pl-0 md:pl-4">
-					<h3 class="mb-2 text-xl font-bold text-[var(--accent-color)]">Mindfulness</h3>
-					<p class="mb-4 text-lg leading-relaxed">
+				<div class="theme-section mb-6">
+					<h3 class="mb-2 text-xl text-[var(--accent-color)]">Mindfulness</h3>
+					<p class="mb-4 text-lg">
 						Many of Ronak's pieces reflect a state of mindful contemplation, often depicting figures
 						in introspective poses or moments of quiet reflection. The deliberate use of negative
 						space and balanced composition creates an atmosphere that invites the viewer to slow
@@ -56,9 +44,9 @@
 					</p>
 				</div>
 
-				<div class="theme-section mb-6 pl-0 md:pl-4">
-					<h3 class="mb-2 text-xl font-bold text-[var(--accent-color)]">Cultural Identity</h3>
-					<p class="mb-4 text-lg leading-relaxed">
+				<div class="theme-section mb-6">
+					<h3 class="mb-2 text-xl text-[var(--accent-color)]">Cultural Identity</h3>
+					<p class="mb-4 text-lg">
 						Drawing from a rich heritage, Ronak incorporates elements of cultural significance into
 						many works. Arabic and Persian calligraphy appears as both textual and decorative
 						elements, creating a bridge between traditional art forms and contemporary expression.
@@ -67,9 +55,9 @@
 					</p>
 				</div>
 
-				<div class="theme-section mb-6 pl-0 md:pl-4">
-					<h3 class="mb-2 text-xl font-bold text-[var(--accent-color)]">Spiritual Exploration</h3>
-					<p class="mb-4 text-lg leading-relaxed">
+				<div class="theme-section mb-6">
+					<h3 class="mb-2 text-xl text-[var(--accent-color)]">Spiritual Exploration</h3>
+					<p class="mb-4 text-lg">
 						The spiritual dimension of human experience is a recurring theme in Ronak's work.
 						Through the use of symbolic imagery, gold leaf accents, and compositions that suggest
 						transformation or transcendence, the artwork invites contemplation of what lies beyond
@@ -80,8 +68,8 @@
 			</section>
 
 			<section class="mb-10">
-				<h2 class="mb-4 text-2xl font-bold text-[var(--heading-color)]">Technique & Process</h2>
-				<p class="mb-6 text-lg leading-relaxed">
+				<h2 class="mb-4 text-2xl text-[var(--heading-color)]">Technique & Process</h2>
+				<p class="mb-6 text-lg">
 					Ronak works primarily with acrylic on canvas, often incorporating mixed media elements
 					such as gold leaf and calligraphy. The artistic process typically begins with intuitive
 					mark-making and gradually evolves through a dialogue between conscious intention and
@@ -91,21 +79,21 @@
 			</section>
 
 			<section class="mb-10">
-				<h2 class="mb-4 text-2xl font-bold text-[var(--heading-color)]">Artist Statement</h2>
+				<h2 class="mb-4 text-2xl text-[var(--heading-color)]">Artist Statement</h2>
 				<div class="artist-statement rounded-md bg-[var(--light-accent)] p-6">
-					<p class="mb-4 text-lg leading-relaxed italic">
+					<p class="mb-4 text-lg italic">
 						"My work explores the spaces between—between abstract and figurative, between cultural
 						traditions, between the seen and unseen aspects of human experience. I am fascinated by
 						the way our inner worlds shape how we perceive reality, and how art can create a meeting
 						point between diverse perspectives.
 					</p>
-					<p class="mb-4 text-lg leading-relaxed italic">
+					<p class="mb-4 text-lg italic">
 						Through my practice, I seek to create visual experiences that invite pause and
 						reflection. In a world that often moves too quickly, I believe there is value in
 						creating moments of contemplation where we might recognize our shared humanity beyond
 						the boundaries of language, culture, or belief.
 					</p>
-					<p class="text-lg leading-relaxed italic">
+					<p class="text-lg italic">
 						Each piece is an invitation to look both outward and inward, to consider not only what
 						we see, but how we see it. In this way, I hope my work contributes to a more mindful and
 						connected world."
@@ -116,7 +104,7 @@
 			<div class="button-container mt-12 flex justify-center">
 				<a
 					href="/#gallery"
-					class="rounded-md bg-[var(--accent-color)] px-8 py-3 text-white transition-all duration-300 hover:bg-[var(--gold-accent)]"
+					class="view-gallery-btn transition-calm-bg rounded-lg bg-[var(--accent-color)] px-8 py-3 text-white"
 				>
 					View Gallery
 				</a>
@@ -126,37 +114,23 @@
 </div>
 
 <style>
-	/* Custom styles specific to the About page */
 	.artist-statement {
-		border-left: 4px solid var(--gold-accent);
+		border-left: 4px solid var(--gold-accent-subtle);
 	}
 
-	/* Add a subtle decoration to section headings */
-	section h2::after {
-		content: '';
-		display: block;
-		width: 50px;
-		height: 2px;
-		background-color: var(--gold-accent);
-		margin-top: 8px;
-	}
-
-	/* Enhance theme sections on hover */
 	.theme-section {
-		border-left: 0px solid var(--gold-accent);
-		padding-left: 0;
-		transition: all 0.3s ease;
+		border-left: 2px solid var(--gold-accent-subtle);
+		padding-left: 1rem;
 	}
 
-	@media (min-width: 768px) {
+	@media (max-width: 767px) {
 		.theme-section {
-			border-left-width: 2px;
-			padding-left: 1rem;
+			border-left: none;
+			padding-left: 0;
 		}
+	}
 
-		.theme-section:hover {
-			border-left-width: 4px;
-			padding-left: 1.25rem;
-		}
+	.view-gallery-btn:hover {
+		background-color: var(--heading-color);
 	}
 </style>
