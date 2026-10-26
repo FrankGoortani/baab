@@ -26,7 +26,7 @@ The SvelteKit app is the active codebase. Key paths:
 
 ## Tech Stack
 
-- **Framework**: SvelteKit 2.x with Svelte 5
+- **Framework**: SvelteKit 3.x with Svelte 5 (config lives in `vite.config.ts`; no `svelte.config.js`; use the `#lib` import alias)
 - **Styling**: TailwindCSS 4.x with CSS variables for theming
 - **Language**: TypeScript
 - **Build**: Vite

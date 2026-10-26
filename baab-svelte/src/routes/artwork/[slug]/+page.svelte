@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { DetailedArtwork } from '$lib/stores/artworks';
+	import type { DetailedArtwork } from '#lib/stores/artworks.js';
 
 	export let data;
 

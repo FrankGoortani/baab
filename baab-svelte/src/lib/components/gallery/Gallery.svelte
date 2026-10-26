@@ -1,6 +1,6 @@
 <script lang="ts">
 	import GalleryItem from './GalleryItem.svelte';
-	import type { Artwork } from '$lib/utils/types';
+	import type { Artwork } from '#lib/utils/types.js';
 
 	export let artworks: Artwork[] = [];
 	export let title = 'Featured Artwork';

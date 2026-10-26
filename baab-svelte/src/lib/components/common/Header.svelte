@@ -1,9 +1,8 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
-	export let navActive = false;
-	export let scrolled = false;
+	let { navActive = $bindable(false), scrolled = $bindable(false) } = $props();
 
 	function toggleNav() {
 		navActive = !navActive;
@@ -40,7 +39,7 @@
 
 		<button
 			class="nav-toggle text-accent block cursor-pointer border-0 bg-transparent text-2xl lg:hidden"
-			on:click={toggleNav}
+			onclick={toggleNav}
 			aria-label="Toggle navigation"
 			aria-expanded={navActive}
 		>
@@ -54,7 +53,7 @@
 		>
 			<button
 				class="nav-close text-accent absolute top-6 right-6 cursor-pointer border-0 bg-transparent text-2xl lg:hidden"
-				on:click={closeNav}
+				onclick={closeNav}
 				aria-label="Close navigation"
 			>
 				<i class="fas fa-times"></i>
@@ -65,14 +64,14 @@
 					<a
 						href="/"
 						class="text-accent py-1 text-xl lg:text-base"
-						on:click={closeNav}
-						class:active={$page.url.pathname === '/'}
+						onclick={closeNav}
+						class:active={page.url.pathname === '/'}
 					>
 						Home
 					</a>
 				</li>
 				<li class="my-6 lg:mx-4 lg:my-0">
-					<a href="/#gallery" class="text-accent py-1 text-xl lg:text-base" on:click={closeNav}>
+					<a href="/#gallery" class="text-accent py-1 text-xl lg:text-base" onclick={closeNav}>
 						Gallery
 					</a>
 				</li>
@@ -80,8 +79,8 @@
 					<a
 						href="/about"
 						class="text-accent py-1 text-xl lg:text-base"
-						on:click={closeNav}
-						class:active={$page.url.pathname === '/about'}
+						onclick={closeNav}
+						class:active={page.url.pathname === '/about'}
 					>
 						About
 					</a>

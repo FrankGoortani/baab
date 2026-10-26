@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Hero from '$lib/components/hero/Hero.svelte';
-	import Gallery from '$lib/components/gallery/Gallery.svelte';
-	import { getAllArtworks } from '$lib/stores/artworks';
+	import Hero from '#lib/components/hero/Hero.svelte';
+	import Gallery from '#lib/components/gallery/Gallery.svelte';
+	import { getAllArtworks } from '#lib/stores/artworks.js';
 
 	const artworks = getAllArtworks();
 

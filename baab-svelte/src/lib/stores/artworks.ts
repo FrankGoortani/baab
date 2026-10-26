@@ -1,4 +1,4 @@
-import type { Artwork } from '$lib/utils/types';
+import type { Artwork } from '#lib/utils/types.js';
 
 // Extending the Artwork interface for our detailed implementation
 export interface DetailedArtwork extends Artwork {

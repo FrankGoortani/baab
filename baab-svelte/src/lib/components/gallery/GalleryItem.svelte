@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Artwork } from '$lib/utils/types';
+	import type { Artwork } from '#lib/utils/types.js';
 
 	export let artwork: Artwork;
 </script>

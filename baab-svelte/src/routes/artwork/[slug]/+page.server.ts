@@ -1,4 +1,4 @@
-import { artworks } from '$lib/stores/artworks';
+import { artworks } from '#lib/stores/artworks.js';
 
 // This function provides all possible slug values for prerendering
 export function entries() {
